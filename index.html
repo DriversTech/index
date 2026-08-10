@@ -88,10 +88,17 @@
             margin-bottom: 25px;
         }
         .site-logo {
-            max-height: 80px;
-            width: auto;
-            display: inline-block;
+            width: 280px;  /* Or whatever specific pixel width you want on mobile */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto;
         }
+        @media screen and (min-width: 768px) {
+        .site-logo {
+        width: 400px; /* Or whatever specific pixel width you want on desktop */
+        }
+}
+        
     </style>
 </head>
 <body>
