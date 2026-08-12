@@ -93,13 +93,10 @@
             display: block;
             margin: 0 auto 20px auto;
         }
-        @media screen and (min-width: 768px) {
-        .site-logo {
-        width: 400px; /* Or whatever specific pixel width you want on desktop */
-        }
         .blueprint-container {
             width: 100%;
             max-width: 100%;
+            box-sizing: border-box;
             overflow: hidden;
             text-align: center;
             margin-top: 30px;
@@ -113,7 +110,12 @@
             display: block;
             margin: 0 auto;
         }
-}
+
+        @media screen and (min-width: 768px) {
+            .site-logo {
+                width: 400px;
+            }
+        }
         
     </style>
 </head>
